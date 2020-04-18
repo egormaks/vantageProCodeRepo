@@ -108,7 +108,7 @@ public class Controller {
 		
 		scheduledExecutorService.scheduleAtFixedRate(rainfallRate, rateInitialDelay, 
 				rainfallRateUpdateInterval, TimeUnit.SECONDS);
-		scheduledExecutorService.scheduleAtFixedRate
-			(humidity, 0, HUMIDITY_UPDATE_INTERVAL, TimeUnit.SECONDS);
+		//scheduledExecutorService.scheduleAtFixedRate
+		//	(humidity, 0, HUMIDITY_UPDATE_INTERVAL, TimeUnit.SECONDS);
 	}
 }

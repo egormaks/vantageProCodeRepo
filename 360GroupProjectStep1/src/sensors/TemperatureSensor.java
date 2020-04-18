@@ -1,5 +1,8 @@
 package sensors;
 
+import java.io.File;
+import java.util.TreeSet;
+
 import controller.Controller;
 
 // https://stackoverflow.com/questions/2444019/how-do-i-generate-a-random-integer-between-min-and-max-in-java
@@ -7,6 +10,11 @@ import controller.Controller;
 // updateInterval: 60 seconds
 
 public class TemperatureSensor extends AbstractSensor implements Runnable {
+		public TemperatureSensor(TreeSet outputSet, File f) {
+		super(outputSet, f);
+		// TODO Auto-generated constructor stub
+	}
+
 		private String sensorName = "Temperature Sensor";
 		private static final int maxTemp = 150; // 150F
 		private static final int minTemp = -40; // -40F
